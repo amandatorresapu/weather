@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <h1 class="nav-title">DoJo Weather</h1>
+      <ul class="nav-links">
+        <li><input class="search-bar" type="text" /></li>
+        <li><button class="btn">Search</button></li>
+        <li>Dallas</li>
+        <li onmouseover="alert('Weather report loading...')">Bosie</li>
+        <li>Grass Valley</li>
+      </ul>
+    </div>
+    <div class="locations">
+      Location
+      <div class="temp-bar">
+        <h6>Temperature</h6>
+        <select name="temperature-scale" onchange="convert(this)">
+          <option>F</option>
+          <option>C</option>
+        </select>
+      </div>
+    </div>
+    <div class="main">
+      <div class="left">
+        <div class="top">
+          <h2>Today</h2>
+          <img
+            src="C:\Users\17142\Desktop\practice_belt\images\some_rain.png"
+            alt=""
+            width="150px"
+            height="200px"
+          />
+          <h5>Some rain</h5>
+        </div>
+        <div class="bottom">
+          <div class="weather">27</div>
+          <div class="weather">65</div>
+        </div>
+      </div>
+      <div class="left-center">
+        <div class="top">
+          <h2>Tomorrow</h2>
+          <img
+            src="C:\Users\17142\Desktop\practice_belt\images\some_rain.png"
+            alt=""
+            width="150px"
+            height="200px"
+          />
+          <h5>Some rain</h5>
+        </div>
+        <div class="bottom">
+          <div class="weather">27</div>
+          <div class="weather">65</div>
+        </div>
+      </div>
+      <div class="right-center">
+        <div class="top">
+          <h2>Sunday</h2>
+          <img
+            src="C:\Users\17142\Desktop\practice_belt\images\some_clouds.png"
+            alt=""
+            width="150px"
+            height="200px"
+          />
+          <h5>Clouds</h5>
+        </div>
+        <div class="bottom">
+          <div class="weather">27</div>
+          <div class="weather">65</div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="top">
+          <h2>Monday</h2>
+          <img
+            src="C:\Users\17142\Desktop\practice_belt\images\some_sun.png"
+            alt=""
+            width="150px"
+            height="200px"
+          />
+          <h5>Sunny</h5>
+        </div>
+        <div class="bottom">
+          <div class="weather">27</div>
+          <div class="weather">65</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="cookie-policy">
+        <img src="" alt="" />
+        <div class="text">
+          <h2>Stopp! cookie time!</h2>
+          <p>We use cookies to personal ads, no real cookies here</p>
+        </div>
+        <button class="btn" onclick="accept()">Accept</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
